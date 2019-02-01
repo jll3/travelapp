@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<div>
+  <h1>Customer Portal</h1>
+</div>
+
+<table>
+  <form action="save.php" method="post">
+	  <th>Basic info</th>
+	  <tr><td>Email   <input type="text" name="eml" value="<?php echo $em; ?>"/></td></tr>
+	  <tr><td>Name    <input type="text" name="nam" value="<?php echo $nm; ?>"/></td></tr>
+	  <tr><td>Address <input type="text" name="addr" value="<?php echo $addr; ?>"/></td></tr>
+	  <tr><td>City    <input type="text" name="city" value="<?php echo $cit; ?>"/></td></tr>
+	  <tr><td>Country <input type="text" name="ctry" value="<?php echo $cnty; ?>"/></td></tr>
+	  <td><input type="submit" value="Save"></td>
+  </form> 
+</table>
+
+<br><br>
+
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+
+</body>
+</html>
